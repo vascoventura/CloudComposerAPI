@@ -34,6 +34,7 @@ public class Connection extends ConnectionCollectionItem {
   @SerializedName("extra")
   private String extra = null;
 
+
   public Connection password(String password) {
     this.password = password;
     return this;
