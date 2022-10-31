@@ -2,12 +2,12 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getDataset**](DatasetApi.md#getDataset) | **GET** /datasets/{uri} | Get a dataset
-[**getDatasetEvents**](DatasetApi.md#getDatasetEvents) | **GET** /datasets/events | Get dataset events
-[**getDatasets**](DatasetApi.md#getDatasets) | **GET** /datasets | List datasets
-[**getUpstreamDatasetEvents**](DatasetApi.md#getUpstreamDatasetEvents) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/upstreamDatasetEvents | Get dataset events for a DAG run
+| Method                                                                 | HTTP request                                                      | Description                      |
+|------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------|
+| [**getDataset**](DatasetApi.md#getDataset)                             | **GET** /datasets/{uri}                                           | Get a dataset                    |
+| [**getDatasetEvents**](DatasetApi.md#getDatasetEvents)                 | **GET** /datasets/events                                          | Get dataset events               |
+| [**getDatasets**](DatasetApi.md#getDatasets)                           | **GET** /datasets                                                 | List datasets                    |
+| [**getUpstreamDatasetEvents**](DatasetApi.md#getUpstreamDatasetEvents) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/upstreamDatasetEvents | Get dataset events for a DAG run |
 
 <a name="getDataset"></a>
 # **getDataset**
@@ -37,9 +37,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uri** | **String**| The encoded Dataset URI |
+| Name    | Type       | Description             | Notes |
+|---------|------------|-------------------------|-------|
+| **uri** | **String** | The encoded Dataset URI |       |
 
 ### Return type
 
@@ -89,16 +89,16 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
- **datasetId** | **Integer**| The Dataset ID that updated the dataset. | [optional]
- **sourceDagId** | **String**| The DAG ID that updated the dataset. | [optional]
- **sourceTaskId** | **String**| The task ID that updated the dataset. | [optional]
- **sourceRunId** | **String**| The DAG run ID that updated the dataset. | [optional]
- **sourceMapIndex** | **Integer**| The map index that updated the dataset. | [optional]
+| Name               | Type        | Description                                                                                                                              | Notes                       |
+|--------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**          | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**         | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy**        | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
+| **datasetId**      | **Integer** | The Dataset ID that updated the dataset.                                                                                                 | [optional]                  |
+| **sourceDagId**    | **String**  | The DAG ID that updated the dataset.                                                                                                     | [optional]                  |
+| **sourceTaskId**   | **String**  | The task ID that updated the dataset.                                                                                                    | [optional]                  |
+| **sourceRunId**    | **String**  | The DAG run ID that updated the dataset.                                                                                                 | [optional]                  |
+| **sourceMapIndex** | **Integer** | The map index that updated the dataset.                                                                                                  | [optional]                  |
 
 ### Return type
 
@@ -142,12 +142,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
- **uriPattern** | **String**| If set, only return datasets with uris matching this pattern.  | [optional]
+| Name           | Type        | Description                                                                                                                              | Notes                       |
+|----------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**      | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**     | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy**    | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
+| **uriPattern** | **String**  | If set, only return datasets with uris matching this pattern.                                                                            | [optional]                  |
 
 ### Return type
 
@@ -191,10 +191,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
+| Name         | Type       | Description     | Notes |
+|--------------|------------|-----------------|-------|
+| **dagId**    | **String** | The DAG ID.     |       |
+| **dagRunId** | **String** | The DAG run ID. |       |
 
 ### Return type
 

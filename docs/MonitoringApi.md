@@ -2,10 +2,10 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getHealth**](MonitoringApi.md#getHealth) | **GET** /health | Get instance status
-[**getVersion**](MonitoringApi.md#getVersion) | **GET** /version | Get version information
+| Method                                        | HTTP request     | Description             |
+|-----------------------------------------------|------------------|-------------------------|
+| [**getHealth**](MonitoringApi.md#getHealth)   | **GET** /health  | Get instance status     |
+| [**getVersion**](MonitoringApi.md#getVersion) | **GET** /version | Get version information |
 
 <a name="getHealth"></a>
 # **getHealth**

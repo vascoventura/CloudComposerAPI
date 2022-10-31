@@ -2,9 +2,9 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getProviders**](ProviderApi.md#getProviders) | **GET** /providers | List providers
+| Method                                          | HTTP request       | Description    |
+|-------------------------------------------------|--------------------|----------------|
+| [**getProviders**](ProviderApi.md#getProviders) | **GET** /providers | List providers |
 
 <a name="getProviders"></a>
 # **getProviders**
@@ -16,9 +16,9 @@ Get a list of providers.  *New in version 2.1.0*
 
 ### Example
 ```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.ProviderApi;
+//Import classes:
+import io.swagger.client.ApiException;
+import io.swagger.client.api.ProviderApi;
 
 
 ProviderApi apiInstance = new ProviderApi();

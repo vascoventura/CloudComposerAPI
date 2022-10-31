@@ -2,19 +2,19 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteDag**](DagApi.md#deleteDag) | **DELETE** /dags/{dag_id} | Delete a DAG
-[**getDag**](DagApi.md#getDag) | **GET** /dags/{dag_id} | Get basic information about a DAG
-[**getDagDetails**](DagApi.md#getDagDetails) | **GET** /dags/{dag_id}/details | Get a simplified representation of DAG
-[**getDagSource**](DagApi.md#getDagSource) | **GET** /dagSources/{file_token} | Get a source code
-[**getDags**](DagApi.md#getDags) | **GET** /dags | List DAGs
-[**getTask**](DagApi.md#getTask) | **GET** /dags/{dag_id}/tasks/{task_id} | Get simplified representation of a task
-[**getTasks**](DagApi.md#getTasks) | **GET** /dags/{dag_id}/tasks | Get tasks for DAG
-[**patchDag**](DagApi.md#patchDag) | **PATCH** /dags/{dag_id} | Update a DAG
-[**patchDags**](DagApi.md#patchDags) | **PATCH** /dags | Update DAGs
-[**postClearTaskInstances**](DagApi.md#postClearTaskInstances) | **POST** /dags/{dag_id}/clearTaskInstances | Clear a set of task instances
-[**postSetTaskInstancesState**](DagApi.md#postSetTaskInstancesState) | **POST** /dags/{dag_id}/updateTaskInstancesState | Set a state of task instances
+| Method                                                               | HTTP request                                     | Description                             |
+|----------------------------------------------------------------------|--------------------------------------------------|-----------------------------------------|
+| [**deleteDag**](DagApi.md#deleteDag)                                 | **DELETE** /dags/{dag_id}                        | Delete a DAG                            |
+| [**getDag**](DagApi.md#getDag)                                       | **GET** /dags/{dag_id}                           | Get basic information about a DAG       |
+| [**getDagDetails**](DagApi.md#getDagDetails)                         | **GET** /dags/{dag_id}/details                   | Get a simplified representation of DAG  |
+| [**getDagSource**](DagApi.md#getDagSource)                           | **GET** /dagSources/{file_token}                 | Get a source code                       |
+| [**getDags**](DagApi.md#getDags)                                     | **GET** /dags                                    | List DAGs                               |
+| [**getTask**](DagApi.md#getTask)                                     | **GET** /dags/{dag_id}/tasks/{task_id}           | Get simplified representation of a task |
+| [**getTasks**](DagApi.md#getTasks)                                   | **GET** /dags/{dag_id}/tasks                     | Get tasks for DAG                       |
+| [**patchDag**](DagApi.md#patchDag)                                   | **PATCH** /dags/{dag_id}                         | Update a DAG                            |
+| [**patchDags**](DagApi.md#patchDags)                                 | **PATCH** /dags                                  | Update DAGs                             |
+| [**postClearTaskInstances**](DagApi.md#postClearTaskInstances)       | **POST** /dags/{dag_id}/clearTaskInstances       | Clear a set of task instances           |
+| [**postSetTaskInstancesState**](DagApi.md#postSetTaskInstancesState) | **POST** /dags/{dag_id}/updateTaskInstancesState | Set a state of task instances           |
 
 <a name="deleteDag"></a>
 # **deleteDag**

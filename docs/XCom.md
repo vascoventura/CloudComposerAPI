@@ -1,6 +1,6 @@
 # XCom
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **String** | The value |  [optional]
+| Name      | Type       | Description | Notes      |
+|-----------|------------|-------------|------------|
+| **value** | **String** | The value   | [optional] |

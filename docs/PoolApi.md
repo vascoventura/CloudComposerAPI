@@ -2,13 +2,13 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deletePool**](PoolApi.md#deletePool) | **DELETE** /pools/{pool_name} | Delete a pool
-[**getPool**](PoolApi.md#getPool) | **GET** /pools/{pool_name} | Get a pool
-[**getPools**](PoolApi.md#getPools) | **GET** /pools | List pools
-[**patchPool**](PoolApi.md#patchPool) | **PATCH** /pools/{pool_name} | Update a pool
-[**postPool**](PoolApi.md#postPool) | **POST** /pools | Create a pool
+| Method                                  | HTTP request                  | Description   |
+|-----------------------------------------|-------------------------------|---------------|
+| [**deletePool**](PoolApi.md#deletePool) | **DELETE** /pools/{pool_name} | Delete a pool |
+| [**getPool**](PoolApi.md#getPool)       | **GET** /pools/{pool_name}    | Get a pool    |
+| [**getPools**](PoolApi.md#getPools)     | **GET** /pools                | List pools    |
+| [**patchPool**](PoolApi.md#patchPool)   | **PATCH** /pools/{pool_name}  | Update a pool |
+| [**postPool**](PoolApi.md#postPool)     | **POST** /pools               | Create a pool |
 
 <a name="deletePool"></a>
 # **deletePool**

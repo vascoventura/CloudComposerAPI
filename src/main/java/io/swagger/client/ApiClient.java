@@ -968,8 +968,8 @@ public class ApiClient {
         updateParamsForAuth(authNames, queryParams, headerParams);
 
         final String url = buildUrl(path, queryParams, collectionQueryParams);
-        //final Request.Builder reqBuilder = new Request.Builder().url(url);
-        final Request.Builder reqBuilder = new Request.Builder().url("https://console.cloud.google.com/apis/api/composer.googleapis.com/metrics?project=nos-dev-xpand");
+
+        final Request.Builder reqBuilder = new Request.Builder().url(url);
         processHeaderParams(headerParams, reqBuilder);
 
         String contentType = (String) headerParams.get("Content-Type");

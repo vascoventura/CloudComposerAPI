@@ -2,9 +2,9 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getPermissions**](PermissionApi.md#getPermissions) | **GET** /permissions | List permissions
+| Method                                                | HTTP request         | Description      |
+|-------------------------------------------------------|----------------------|------------------|
+| [**getPermissions**](PermissionApi.md#getPermissions) | **GET** /permissions | List permissions |
 
 <a name="getPermissions"></a>
 # **getPermissions**
@@ -35,10 +35,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
+| Name       | Type        | Description                                                            | Notes                       |
+|------------|-------------|------------------------------------------------------------------------|-----------------------------|
+| **limit**  | **Integer** | The numbers of items to return.                                        | [optional] [default to 100] |
+| **offset** | **Integer** | The number of items to skip before starting to collect the result set. | [optional] [enum: ]         |
 
 ### Return type
 

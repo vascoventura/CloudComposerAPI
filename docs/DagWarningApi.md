@@ -2,9 +2,9 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getDagWarnings**](DagWarningApi.md#getDagWarnings) | **GET** /dagWarnings | List dag warnings
+| Method                                                | HTTP request         | Description       |
+|-------------------------------------------------------|----------------------|-------------------|
+| [**getDagWarnings**](DagWarningApi.md#getDagWarnings) | **GET** /dagWarnings | List dag warnings |
 
 <a name="getDagWarnings"></a>
 # **getDagWarnings**
@@ -36,13 +36,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| If set, only return DAG warnings with this dag_id. | [optional]
- **warningType** | **String**| If set, only return DAG warnings with this type. | [optional]
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name            | Type        | Description                                                                                                                              | Notes                       |
+|-----------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **dagId**       | **String**  | If set, only return DAG warnings with this dag_id.                                                                                       | [optional]                  |
+| **warningType** | **String**  | If set, only return DAG warnings with this type.                                                                                         | [optional]                  |
+| **limit**       | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**      | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy**     | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
 
 ### Return type
 

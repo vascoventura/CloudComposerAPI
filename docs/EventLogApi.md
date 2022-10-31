@@ -2,10 +2,10 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getEventLog**](EventLogApi.md#getEventLog) | **GET** /eventLogs/{event_log_id} | Get a log entry
-[**getEventLogs**](EventLogApi.md#getEventLogs) | **GET** /eventLogs | List log entries
+| Method                                          | HTTP request                      | Description      |
+|-------------------------------------------------|-----------------------------------|------------------|
+| [**getEventLog**](EventLogApi.md#getEventLog)   | **GET** /eventLogs/{event_log_id} | Get a log entry  |
+| [**getEventLogs**](EventLogApi.md#getEventLogs) | **GET** /eventLogs                | List log entries |
 
 <a name="getEventLog"></a>
 # **getEventLog**

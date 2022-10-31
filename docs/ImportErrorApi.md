@@ -2,10 +2,10 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getImportError**](ImportErrorApi.md#getImportError) | **GET** /importErrors/{import_error_id} | Get an import error
-[**getImportErrors**](ImportErrorApi.md#getImportErrors) | **GET** /importErrors | List import errors
+| Method                                                   | HTTP request                            | Description         |
+|----------------------------------------------------------|-----------------------------------------|---------------------|
+| [**getImportError**](ImportErrorApi.md#getImportError)   | **GET** /importErrors/{import_error_id} | Get an import error |
+| [**getImportErrors**](ImportErrorApi.md#getImportErrors) | **GET** /importErrors                   | List import errors  |
 
 <a name="getImportError"></a>
 # **getImportError**
@@ -33,9 +33,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **importErrorId** | **Integer**| The import error ID. |
+| Name              | Type        | Description          | Notes |
+|-------------------|-------------|----------------------|-------|
+| **importErrorId** | **Integer** | The import error ID. |       |
 
 ### Return type
 
@@ -78,11 +78,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name        | Type        | Description                                                                                                                              | Notes                       |
+|-------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**   | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**  | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy** | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
 
 ### Return type
 

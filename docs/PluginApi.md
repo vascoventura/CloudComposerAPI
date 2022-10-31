@@ -2,9 +2,9 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getPlugins**](PluginApi.md#getPlugins) | **GET** /plugins | Get a list of loaded plugins
+| Method                                    | HTTP request     | Description                  |
+|-------------------------------------------|------------------|------------------------------|
+| [**getPlugins**](PluginApi.md#getPlugins) | **GET** /plugins | Get a list of loaded plugins |
 
 <a name="getPlugins"></a>
 # **getPlugins**
@@ -35,10 +35,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
+| Name       | Type        | Description                                                            | Notes                       |
+|------------|-------------|------------------------------------------------------------------------|-----------------------------|
+| **limit**  | **Integer** | The numbers of items to return.                                        | [optional] [default to 100] |
+| **offset** | **Integer** | The number of items to skip before starting to collect the result set. | [optional] [enum: ]         |
 
 ### Return type
 

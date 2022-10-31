@@ -2,13 +2,13 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteUser**](UserApi.md#deleteUser) | **DELETE** /users/{username} | Delete a user
-[**getUser**](UserApi.md#getUser) | **GET** /users/{username} | Get a user
-[**getUsers**](UserApi.md#getUsers) | **GET** /users | List users
-[**patchUser**](UserApi.md#patchUser) | **PATCH** /users/{username} | Update a user
-[**postUser**](UserApi.md#postUser) | **POST** /users | Create a user
+| Method                                  | HTTP request                 | Description   |
+|-----------------------------------------|------------------------------|---------------|
+| [**deleteUser**](UserApi.md#deleteUser) | **DELETE** /users/{username} | Delete a user |
+| [**getUser**](UserApi.md#getUser)       | **GET** /users/{username}    | Get a user    |
+| [**getUsers**](UserApi.md#getUsers)     | **GET** /users               | List users    |
+| [**patchUser**](UserApi.md#patchUser)   | **PATCH** /users/{username}  | Update a user |
+| [**postUser**](UserApi.md#postUser)     | **POST** /users              | Create a user |
 
 <a name="deleteUser"></a>
 # **deleteUser**
@@ -37,9 +37,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| The username of the user.  *New in version 2.1.0*  |
+| Name         | Type       | Description                                       | Notes |
+|--------------|------------|---------------------------------------------------|-------|
+| **username** | **String** | The username of the user.  *New in version 2.1.0* |       |
 
 ### Return type
 
@@ -82,9 +82,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **username** | **String**| The username of the user.  *New in version 2.1.0*  |
+| Name         | Type       | Description                                       | Notes |
+|--------------|------------|---------------------------------------------------|-------|
+| **username** | **String** | The username of the user.  *New in version 2.1.0* |       |
 
 ### Return type
 
@@ -129,11 +129,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name        | Type        | Description                                                                                                                              | Notes                       |
+|-------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**   | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**  | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy** | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
 
 ### Return type
 
@@ -178,11 +178,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**User**](User.md)|  |
- **username** | **String**| The username of the user.  *New in version 2.1.0*  |
- **updateMask** | [**List&lt;String&gt;**](String.md)| The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields.  | [optional]
+| Name           | Type                                | Description                                                                                                                                             | Notes      |
+|----------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **body**       | [**User**](User.md)                 |                                                                                                                                                         |            |
+| **username**   | **String**                          | The username of the user.  *New in version 2.1.0*                                                                                                       |            |
+| **updateMask** | [**List&lt;String&gt;**](String.md) | The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields. | [optional] |
 
 ### Return type
 
@@ -225,9 +225,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**User**](User.md)|  |
+| Name     | Type                | Description | Notes |
+|----------|---------------------|-------------|-------|
+| **body** | [**User**](User.md) |             |       |
 
 ### Return type
 

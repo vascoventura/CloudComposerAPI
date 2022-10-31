@@ -2,9 +2,9 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getConfig**](ConfigApi.md#getConfig) | **GET** /config | Get current configuration
+| Method                                  | HTTP request    | Description               |
+|-----------------------------------------|-----------------|---------------------------|
+| [**getConfig**](ConfigApi.md#getConfig) | **GET** /config | Get current configuration |
 
 <a name="getConfig"></a>
 # **getConfig**

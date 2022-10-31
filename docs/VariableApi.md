@@ -2,13 +2,13 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteVariable**](VariableApi.md#deleteVariable) | **DELETE** /variables/{variable_key} | Delete a variable
-[**getVariable**](VariableApi.md#getVariable) | **GET** /variables/{variable_key} | Get a variable
-[**getVariables**](VariableApi.md#getVariables) | **GET** /variables | List variables
-[**patchVariable**](VariableApi.md#patchVariable) | **PATCH** /variables/{variable_key} | Update a variable
-[**postVariables**](VariableApi.md#postVariables) | **POST** /variables | Create a variable
+| Method                                              | HTTP request                         | Description       |
+|-----------------------------------------------------|--------------------------------------|-------------------|
+| [**deleteVariable**](VariableApi.md#deleteVariable) | **DELETE** /variables/{variable_key} | Delete a variable |
+| [**getVariable**](VariableApi.md#getVariable)       | **GET** /variables/{variable_key}    | Get a variable    |
+| [**getVariables**](VariableApi.md#getVariables)     | **GET** /variables                   | List variables    |
+| [**patchVariable**](VariableApi.md#patchVariable)   | **PATCH** /variables/{variable_key}  | Update a variable |
+| [**postVariables**](VariableApi.md#postVariables)   | **POST** /variables                  | Create a variable |
 
 <a name="deleteVariable"></a>
 # **deleteVariable**
@@ -35,9 +35,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **variableKey** | **String**| The variable Key. |
+| Name            | Type       | Description       | Notes |
+|-----------------|------------|-------------------|-------|
+| **variableKey** | **String** | The variable Key. |       |
 
 ### Return type
 
@@ -80,9 +80,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **variableKey** | **String**| The variable Key. |
+| Name            | Type       | Description       | Notes |
+|-----------------|------------|-------------------|-------|
+| **variableKey** | **String** | The variable Key. |       |
 
 ### Return type
 
@@ -127,11 +127,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name        | Type        | Description                                                                                                                              | Notes                       |
+|-------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**   | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**  | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy** | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
 
 ### Return type
 
@@ -176,11 +176,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Variable**](Variable.md)|  |
- **variableKey** | **String**| The variable Key. |
- **updateMask** | [**List&lt;String&gt;**](String.md)| The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields.  | [optional]
+| Name            | Type                                | Description                                                                                                                                             | Notes      |
+|-----------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **body**        | [**Variable**](Variable.md)         |                                                                                                                                                         |            |
+| **variableKey** | **String**                          | The variable Key.                                                                                                                                       |            |
+| **updateMask**  | [**List&lt;String&gt;**](String.md) | The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields. | [optional] |
 
 ### Return type
 
@@ -221,9 +221,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Variable**](Variable.md)|  |
+| Name     | Type                        | Description | Notes |
+|----------|-----------------------------|-------------|-------|
+| **body** | [**Variable**](Variable.md) |             |       |
 
 ### Return type
 

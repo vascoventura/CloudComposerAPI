@@ -2,13 +2,13 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteRole**](RoleApi.md#deleteRole) | **DELETE** /roles/{role_name} | Delete a role
-[**getRole**](RoleApi.md#getRole) | **GET** /roles/{role_name} | Get a role
-[**getRoles**](RoleApi.md#getRoles) | **GET** /roles | List roles
-[**patchRole**](RoleApi.md#patchRole) | **PATCH** /roles/{role_name} | Update a role
-[**postRole**](RoleApi.md#postRole) | **POST** /roles | Create a role
+| Method                                  | HTTP request                  | Description   |
+|-----------------------------------------|-------------------------------|---------------|
+| [**deleteRole**](RoleApi.md#deleteRole) | **DELETE** /roles/{role_name} | Delete a role |
+| [**getRole**](RoleApi.md#getRole)       | **GET** /roles/{role_name}    | Get a role    |
+| [**getRoles**](RoleApi.md#getRoles)     | **GET** /roles                | List roles    |
+| [**patchRole**](RoleApi.md#patchRole)   | **PATCH** /roles/{role_name}  | Update a role |
+| [**postRole**](RoleApi.md#postRole)     | **POST** /roles               | Create a role |
 
 <a name="deleteRole"></a>
 # **deleteRole**
@@ -37,9 +37,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleName** | **String**| The role name |
+| Name         | Type       | Description   | Notes |
+|--------------|------------|---------------|-------|
+| **roleName** | **String** | The role name |       |
 
 ### Return type
 
@@ -82,9 +82,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **roleName** | **String**| The role name |
+| Name         | Type       | Description   | Notes |
+|--------------|------------|---------------|-------|
+| **roleName** | **String** | The role name |       |
 
 ### Return type
 
@@ -129,11 +129,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name        | Type        | Description                                                                                                                              | Notes                       |
+|-------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **limit**   | **Integer** | The numbers of items to return.                                                                                                          | [optional] [default to 100] |
+| **offset**  | **Integer** | The number of items to skip before starting to collect the result set.                                                                   | [optional] [enum: ]         |
+| **orderBy** | **String**  | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0* | [optional]                  |
 
 ### Return type
 
@@ -178,11 +178,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Role**](Role.md)|  |
- **roleName** | **String**| The role name |
- **updateMask** | [**List&lt;String&gt;**](String.md)| The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields.  | [optional]
+| Name           | Type                                | Description                                                                                                                                             | Notes      |
+|----------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **body**       | [**Role**](Role.md)                 |                                                                                                                                                         |            |
+| **roleName**   | **String**                          | The role name                                                                                                                                           |            |
+| **updateMask** | [**List&lt;String&gt;**](String.md) | The fields to update on the resource. If absent or empty, all modifiable fields are updated. A comma-separated list of fully qualified names of fields. | [optional] |
 
 ### Return type
 
@@ -225,9 +225,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Role**](Role.md)|  |
+| Name     | Type                | Description | Notes |
+|----------|---------------------|-------------|-------|
+| **body** | [**Role**](Role.md) |             |       |
 
 ### Return type
 

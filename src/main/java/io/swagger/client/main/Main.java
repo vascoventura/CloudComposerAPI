@@ -8,18 +8,12 @@ import io.swagger.client.model.ConnectionCollection;
 import io.swagger.client.model.ConnectionTest;
 import java.sql.SQLOutput;
 
-/**
- * @author <a href="mailto:<vasco.ventura@xpand-it.com>"><Vasco Ventura></a>
- * @version $Revision: 666 $
- */
-
 public class Main {
   public static void main(String []args) {
 
     ConnectionApi apiInstance = new ConnectionApi();
     ConnectionTest result;
     Connection body = new Connection();
-
 
     {
       try {

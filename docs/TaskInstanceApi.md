@@ -2,15 +2,15 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getExtraLinks**](TaskInstanceApi.md#getExtraLinks) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/links | List extra links
-[**getLog**](TaskInstanceApi.md#getLog) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/logs/{task_try_number} | Get logs
-[**getMappedTaskInstance**](TaskInstanceApi.md#getMappedTaskInstance) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/{map_index} | Get a mapped task instance
-[**getMappedTaskInstances**](TaskInstanceApi.md#getMappedTaskInstances) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/listMapped | List mapped task instances
-[**getTaskInstance**](TaskInstanceApi.md#getTaskInstance) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id} | Get a task instance
-[**getTaskInstances**](TaskInstanceApi.md#getTaskInstances) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances | List task instances
-[**getTaskInstancesBatch**](TaskInstanceApi.md#getTaskInstancesBatch) | **POST** /dags/~/dagRuns/~/taskInstances/list | List task instances (batch)
+| Method                                                                  | HTTP request                                                                               | Description                 |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------|
+| [**getExtraLinks**](TaskInstanceApi.md#getExtraLinks)                   | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/links                  | List extra links            |
+| [**getLog**](TaskInstanceApi.md#getLog)                                 | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/logs/{task_try_number} | Get logs                    |
+| [**getMappedTaskInstance**](TaskInstanceApi.md#getMappedTaskInstance)   | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/{map_index}            | Get a mapped task instance  |
+| [**getMappedTaskInstances**](TaskInstanceApi.md#getMappedTaskInstances) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/listMapped             | List mapped task instances  |
+| [**getTaskInstance**](TaskInstanceApi.md#getTaskInstance)               | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}                        | Get a task instance         |
+| [**getTaskInstances**](TaskInstanceApi.md#getTaskInstances)             | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances                                  | List task instances         |
+| [**getTaskInstancesBatch**](TaskInstanceApi.md#getTaskInstancesBatch)   | **POST** /dags/~/dagRuns/~/taskInstances/list                                              | List task instances (batch) |
 
 <a name="getExtraLinks"></a>
 # **getExtraLinks**
@@ -42,11 +42,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
+| Name         | Type       | Description     | Notes |
+|--------------|------------|-----------------|-------|
+| **dagId**    | **String** | The DAG ID.     |       |
+| **dagRunId** | **String** | The DAG run ID. |       |
+| **taskId**   | **String** | The task ID.    |       |
 
 ### Return type
 
@@ -95,15 +95,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
- **taskTryNumber** | **Integer**| The task try number. |
- **fullContent** | **Boolean**| A full content will be returned. By default, only the first fragment will be returned.  | [optional]
- **mapIndex** | **Integer**| Filter on map index for mapped task. | [optional]
- **token** | **String**| A token that allows you to continue fetching logs. If passed, it will specify the location from which the download should be continued.  | [optional]
+| Name              | Type        | Description                                                                                                                             | Notes      |
+|-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **dagId**         | **String**  | The DAG ID.                                                                                                                             |            |
+| **dagRunId**      | **String**  | The DAG run ID.                                                                                                                         |            |
+| **taskId**        | **String**  | The task ID.                                                                                                                            |            |
+| **taskTryNumber** | **Integer** | The task try number.                                                                                                                    |            |
+| **fullContent**   | **Boolean** | A full content will be returned. By default, only the first fragment will be returned.                                                  | [optional] |
+| **mapIndex**      | **Integer** | Filter on map index for mapped task.                                                                                                    | [optional] |
+| **token**         | **String**  | A token that allows you to continue fetching logs. If passed, it will specify the location from which the download should be continued. | [optional] |
 
 ### Return type
 
@@ -149,12 +149,12 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
- **mapIndex** | **Integer**| The map index. |
+| Name         | Type        | Description     | Notes |
+|--------------|-------------|-----------------|-------|
+| **dagId**    | **String**  | The DAG ID.     |       |
+| **dagRunId** | **String**  | The DAG run ID. |       |
+| **taskId**   | **String**  | The task ID.    |       |
+| **mapIndex** | **Integer** | The map index.  |       |
 
 ### Return type
 
@@ -213,25 +213,25 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
- **executionDateGte** | **OffsetDateTime**| Returns objects greater or equal to the specified date.  This can be combined with execution_date_lte parameter to receive only the selected period.  | [optional]
- **executionDateLte** | **OffsetDateTime**| Returns objects less than or equal to the specified date.  This can be combined with execution_date_gte parameter to receive only the selected period.  | [optional]
- **startDateGte** | **OffsetDateTime**| Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.  | [optional]
- **startDateLte** | **OffsetDateTime**| Returns objects less or equal the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.  | [optional]
- **endDateGte** | **OffsetDateTime**| Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.  | [optional]
- **endDateLte** | **OffsetDateTime**| Returns objects less than or equal to the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.  | [optional]
- **durationGte** | **BigDecimal**| Returns objects greater than or equal to the specified values.  This can be combined with duration_lte parameter to receive only the selected period.  | [optional]
- **durationLte** | **BigDecimal**| Returns objects less than or equal to the specified values.  This can be combined with duration_gte parameter to receive only the selected range.  | [optional]
- **state** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **pool** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **queue** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **orderBy** | **String**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
+| Name                 | Type                                | Description                                                                                                                                            | Notes                       |
+|----------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **dagId**            | **String**                          | The DAG ID.                                                                                                                                            |                             |
+| **dagRunId**         | **String**                          | The DAG run ID.                                                                                                                                        |                             |
+| **taskId**           | **String**                          | The task ID.                                                                                                                                           |                             |
+| **limit**            | **Integer**                         | The numbers of items to return.                                                                                                                        | [optional] [default to 100] |
+| **offset**           | **Integer**                         | The number of items to skip before starting to collect the result set.                                                                                 | [optional] [enum: ]         |
+| **executionDateGte** | **OffsetDateTime**                  | Returns objects greater or equal to the specified date.  This can be combined with execution_date_lte parameter to receive only the selected period.   | [optional]                  |
+| **executionDateLte** | **OffsetDateTime**                  | Returns objects less than or equal to the specified date.  This can be combined with execution_date_gte parameter to receive only the selected period. | [optional]                  |
+| **startDateGte**     | **OffsetDateTime**                  | Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.          | [optional]                  |
+| **startDateLte**     | **OffsetDateTime**                  | Returns objects less or equal the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.             | [optional]                  |
+| **endDateGte**       | **OffsetDateTime**                  | Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.          | [optional]                  |
+| **endDateLte**       | **OffsetDateTime**                  | Returns objects less than or equal to the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.     | [optional]                  |
+| **durationGte**      | **BigDecimal**                      | Returns objects greater than or equal to the specified values.  This can be combined with duration_lte parameter to receive only the selected period.  | [optional]                  |
+| **durationLte**      | **BigDecimal**                      | Returns objects less than or equal to the specified values.  This can be combined with duration_gte parameter to receive only the selected range.      | [optional]                  |
+| **state**            | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **pool**             | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **queue**            | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **orderBy**          | **String**                          | The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*               | [optional]                  |
 
 ### Return type
 
@@ -274,11 +274,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
+| Name         | Type       | Description     | Notes |
+|--------------|------------|-----------------|-------|
+| **dagId**    | **String** | The DAG ID.     |       |
+| **dagRunId** | **String** | The DAG run ID. |       |
+| **taskId**   | **String** | The task ID.    |       |
 
 ### Return type
 
@@ -335,23 +335,23 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **executionDateGte** | **OffsetDateTime**| Returns objects greater or equal to the specified date.  This can be combined with execution_date_lte parameter to receive only the selected period.  | [optional]
- **executionDateLte** | **OffsetDateTime**| Returns objects less than or equal to the specified date.  This can be combined with execution_date_gte parameter to receive only the selected period.  | [optional]
- **startDateGte** | **OffsetDateTime**| Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.  | [optional]
- **startDateLte** | **OffsetDateTime**| Returns objects less or equal the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.  | [optional]
- **endDateGte** | **OffsetDateTime**| Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.  | [optional]
- **endDateLte** | **OffsetDateTime**| Returns objects less than or equal to the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.  | [optional]
- **durationGte** | **BigDecimal**| Returns objects greater than or equal to the specified values.  This can be combined with duration_lte parameter to receive only the selected period.  | [optional]
- **durationLte** | **BigDecimal**| Returns objects less than or equal to the specified values.  This can be combined with duration_gte parameter to receive only the selected range.  | [optional]
- **state** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **pool** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **queue** | [**List&lt;String&gt;**](String.md)| The value can be repeated to retrieve multiple matching values (OR condition). | [optional]
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
+| Name                 | Type                                | Description                                                                                                                                            | Notes                       |
+|----------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| **dagId**            | **String**                          | The DAG ID.                                                                                                                                            |                             |
+| **dagRunId**         | **String**                          | The DAG run ID.                                                                                                                                        |                             |
+| **executionDateGte** | **OffsetDateTime**                  | Returns objects greater or equal to the specified date.  This can be combined with execution_date_lte parameter to receive only the selected period.   | [optional]                  |
+| **executionDateLte** | **OffsetDateTime**                  | Returns objects less than or equal to the specified date.  This can be combined with execution_date_gte parameter to receive only the selected period. | [optional]                  |
+| **startDateGte**     | **OffsetDateTime**                  | Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.          | [optional]                  |
+| **startDateLte**     | **OffsetDateTime**                  | Returns objects less or equal the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.             | [optional]                  |
+| **endDateGte**       | **OffsetDateTime**                  | Returns objects greater or equal the specified date.  This can be combined with start_date_lte parameter to receive only the selected period.          | [optional]                  |
+| **endDateLte**       | **OffsetDateTime**                  | Returns objects less than or equal to the specified date.  This can be combined with start_date_gte parameter to receive only the selected period.     | [optional]                  |
+| **durationGte**      | **BigDecimal**                      | Returns objects greater than or equal to the specified values.  This can be combined with duration_lte parameter to receive only the selected period.  | [optional]                  |
+| **durationLte**      | **BigDecimal**                      | Returns objects less than or equal to the specified values.  This can be combined with duration_gte parameter to receive only the selected range.      | [optional]                  |
+| **state**            | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **pool**             | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **queue**            | [**List&lt;String&gt;**](String.md) | The value can be repeated to retrieve multiple matching values (OR condition).                                                                         | [optional]                  |
+| **limit**            | **Integer**                         | The numbers of items to return.                                                                                                                        | [optional] [default to 100] |
+| **offset**           | **Integer**                         | The number of items to skip before starting to collect the result set.                                                                                 | [optional] [enum: ]         |
 
 ### Return type
 
@@ -394,9 +394,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**ListTaskInstanceForm**](ListTaskInstanceForm.md)|  |
+| Name     | Type                                                | Description | Notes |
+|----------|-----------------------------------------------------|-------------|-------|
+| **body** | [**ListTaskInstanceForm**](ListTaskInstanceForm.md) |             |       |
 
 ### Return type
 

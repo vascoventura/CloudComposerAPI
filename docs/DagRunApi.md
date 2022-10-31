@@ -2,16 +2,16 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**clearDagRun**](DagRunApi.md#clearDagRun) | **POST** /dags/{dag_id}/dagRuns/{dag_run_id}/clear | Clear a DAG run
-[**deleteDagRun**](DagRunApi.md#deleteDagRun) | **DELETE** /dags/{dag_id}/dagRuns/{dag_run_id} | Delete a DAG run
-[**getDagRun**](DagRunApi.md#getDagRun) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id} | Get a DAG run
-[**getDagRuns**](DagRunApi.md#getDagRuns) | **GET** /dags/{dag_id}/dagRuns | List DAG runs
-[**getDagRunsBatch**](DagRunApi.md#getDagRunsBatch) | **POST** /dags/~/dagRuns/list | List DAG runs (batch)
-[**getUpstreamDatasetEvents**](DagRunApi.md#getUpstreamDatasetEvents) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/upstreamDatasetEvents | Get dataset events for a DAG run
-[**postDagRun**](DagRunApi.md#postDagRun) | **POST** /dags/{dag_id}/dagRuns | Trigger a new DAG run
-[**updateDagRunState**](DagRunApi.md#updateDagRunState) | **PATCH** /dags/{dag_id}/dagRuns/{dag_run_id} | Modify a DAG run
+| Method                                                                | HTTP request                                                      | Description                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------|
+| [**clearDagRun**](DagRunApi.md#clearDagRun)                           | **POST** /dags/{dag_id}/dagRuns/{dag_run_id}/clear                | Clear a DAG run                  |
+| [**deleteDagRun**](DagRunApi.md#deleteDagRun)                         | **DELETE** /dags/{dag_id}/dagRuns/{dag_run_id}                    | Delete a DAG run                 |
+| [**getDagRun**](DagRunApi.md#getDagRun)                               | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}                       | Get a DAG run                    |
+| [**getDagRuns**](DagRunApi.md#getDagRuns)                             | **GET** /dags/{dag_id}/dagRuns                                    | List DAG runs                    |
+| [**getDagRunsBatch**](DagRunApi.md#getDagRunsBatch)                   | **POST** /dags/~/dagRuns/list                                     | List DAG runs (batch)            |
+| [**getUpstreamDatasetEvents**](DagRunApi.md#getUpstreamDatasetEvents) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/upstreamDatasetEvents | Get dataset events for a DAG run |
+| [**postDagRun**](DagRunApi.md#postDagRun)                             | **POST** /dags/{dag_id}/dagRuns                                   | Trigger a new DAG run            |
+| [**updateDagRunState**](DagRunApi.md#updateDagRunState)               | **PATCH** /dags/{dag_id}/dagRuns/{dag_run_id}                     | Modify a DAG run                 |
 
 <a name="clearDagRun"></a>
 # **clearDagRun**

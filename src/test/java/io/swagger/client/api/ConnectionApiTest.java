@@ -84,8 +84,6 @@ public class ConnectionApiTest {
     /**
      * Update a connection
      *
-     * 
-     *
      * @throws Exception
      *          if the Api call fails
      */
@@ -108,9 +106,8 @@ public class ConnectionApiTest {
      */
     @Test
     public void postConnectionTest() throws Exception {
-        Connection body = null;
+        Connection body = new Connection();
         Connection response = api.postConnection(body);
-
         // TODO: test validations
     }
     /**

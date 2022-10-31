@@ -2,10 +2,10 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getXcomEntries**](XComApi.md#getXcomEntries) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/xcomEntries | List XCom entries
-[**getXcomEntry**](XComApi.md#getXcomEntry) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/xcomEntries/{xcom_key} | Get an XCom entry
+| Method                                          | HTTP request                                                                               | Description       |
+|-------------------------------------------------|--------------------------------------------------------------------------------------------|-------------------|
+| [**getXcomEntries**](XComApi.md#getXcomEntries) | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/xcomEntries            | List XCom entries |
+| [**getXcomEntry**](XComApi.md#getXcomEntry)     | **GET** /dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/xcomEntries/{xcom_key} | Get an XCom entry |
 
 <a name="getXcomEntries"></a>
 # **getXcomEntries**
@@ -39,13 +39,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
- **limit** | **Integer**| The numbers of items to return. | [optional] [default to 100]
- **offset** | **Integer**| The number of items to skip before starting to collect the result set. | [optional] [enum: ]
+| Name         | Type        | Description                                                            | Notes                       |
+|--------------|-------------|------------------------------------------------------------------------|-----------------------------|
+| **dagId**    | **String**  | The DAG ID.                                                            |                             |
+| **dagRunId** | **String**  | The DAG run ID.                                                        |                             |
+| **taskId**   | **String**  | The task ID.                                                           |                             |
+| **limit**    | **Integer** | The numbers of items to return.                                        | [optional] [default to 100] |
+| **offset**   | **Integer** | The number of items to skip before starting to collect the result set. | [optional] [enum: ]         |
 
 ### Return type
 
@@ -90,13 +90,13 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dagId** | **String**| The DAG ID. |
- **dagRunId** | **String**| The DAG run ID. |
- **taskId** | **String**| The task ID. |
- **xcomKey** | **String**| The XCom key. |
- **deserialize** | **Boolean**| Whether to deserialize an XCom value when using a custom XCom backend.  The XCom API endpoint calls &#x60;orm_deserialize_value&#x60; by default since an XCom may contain value that is potentially expensive to deserialize in the web server. Setting this to true overrides the consideration, and calls &#x60;deserialize_value&#x60; instead.  This parameter is not meaningful when using the default XCom backend.  *New in version 2.4.0*  | [optional] [default to false]
+| Name            | Type        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        | Notes                         |
+|-----------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| **dagId**       | **String**  | The DAG ID.                                                                                                                                                                                                                                                                                                                                                                                                                                        |                               |
+| **dagRunId**    | **String**  | The DAG run ID.                                                                                                                                                                                                                                                                                                                                                                                                                                    |                               |
+| **taskId**      | **String**  | The task ID.                                                                                                                                                                                                                                                                                                                                                                                                                                       |                               |
+| **xcomKey**     | **String**  | The XCom key.                                                                                                                                                                                                                                                                                                                                                                                                                                      |                               |
+| **deserialize** | **Boolean** | Whether to deserialize an XCom value when using a custom XCom backend.  The XCom API endpoint calls &#x60;orm_deserialize_value&#x60; by default since an XCom may contain value that is potentially expensive to deserialize in the web server. Setting this to true overrides the consideration, and calls &#x60;deserialize_value&#x60; instead.  This parameter is not meaningful when using the default XCom backend.  *New in version 2.4.0* | [optional] [default to false] |
 
 ### Return type
 

@@ -2,14 +2,14 @@
 
 All URIs are relative to */api/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteConnection**](ConnectionApi.md#deleteConnection) | **DELETE** /connections/{connection_id} | Delete a connection
-[**getConnection**](ConnectionApi.md#getConnection) | **GET** /connections/{connection_id} | Get a connection
-[**getConnections**](ConnectionApi.md#getConnections) | **GET** /connections | List connections
-[**patchConnection**](ConnectionApi.md#patchConnection) | **PATCH** /connections/{connection_id} | Update a connection
-[**postConnection**](ConnectionApi.md#postConnection) | **POST** /connections | Create a connection
-[**testConnection**](ConnectionApi.md#testConnection) | **POST** /connections/test | Test a connection
+| Method                                                    | HTTP request                            | Description         |
+|-----------------------------------------------------------|-----------------------------------------|---------------------|
+| [**deleteConnection**](ConnectionApi.md#deleteConnection) | **DELETE** /connections/{connection_id} | Delete a connection |
+| [**getConnection**](ConnectionApi.md#getConnection)       | **GET** /connections/{connection_id}    | Get a connection    |
+| [**getConnections**](ConnectionApi.md#getConnections)     | **GET** /connections                    | List connections    |
+| [**patchConnection**](ConnectionApi.md#patchConnection)   | **PATCH** /connections/{connection_id}  | Update a connection |
+| [**postConnection**](ConnectionApi.md#postConnection)     | **POST** /connections                   | Create a connection |
+| [**testConnection**](ConnectionApi.md#testConnection)     | **POST** /connections/test              | Test a connection   |
 
 <a name="deleteConnection"></a>
 # **deleteConnection**
